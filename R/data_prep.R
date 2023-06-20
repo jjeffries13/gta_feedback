@@ -3,7 +3,7 @@ library(pacman)
 p_load("tidyverse", "qualtRics", "janitor", "here", install = T)
 
 gta_data_raw <- fetch_survey(surveyID = "SV_b93hZrr85f3AZMy",
-                             force_request = TRUE) # forces retrieval of most recent surcey data
+                             force_request = TRUE) # forces retrieval of most recent survey data
 
 gta_data_clean <- gta_data_raw |> 
   select(-c(StartDate:IPAddress), -c(Finished:RecordedDate), -c(RecipientLastName:UserLanguage)) |>
