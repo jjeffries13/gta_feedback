@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 library(pacman)
 
-p_load("tidyverse", "purrr", "here", "Hmisc")
+p_load("tidyverse", "here", "Hmisc")
 
 report_data_numeric <- read_csv(file = here("./data/gta_report_data.csv"))
 report_data_full <- read_csv(file = here("./data/gta_data_clean.csv"))
